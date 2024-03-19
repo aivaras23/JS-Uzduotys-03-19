@@ -12,6 +12,15 @@ const newRow4 = newArr.map(([, , , row4]) => row4);
 const reversedSeq = [];
 reversedSeq.push(newRow1, newRow2, newRow3, newRow4);
 
+console.log(reversedSeq);
+
+reversedSeq.map((l) => {
+    let result = l.map(x => x + ' ').join('');
+    console.log(result);
+});
+
+/*
+2 variantas
 reversedSeq.forEach((line) => {
     let out = '';
     line.forEach((el) => {
@@ -20,3 +29,4 @@ reversedSeq.forEach((line) => {
     let result = out;
     console.log(result);
 })
+*/
